@@ -1,0 +1,125 @@
+.projects-container{
+    width: 96vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#projects{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(0deg,#1b1b1b,#222);
+    text-align: center;
+}
+
+#projects h1{
+    color:#fff;
+    font-size: 40px;
+}
+.select-project{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.select-project a{
+    font-size: 15px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    color: #777;
+}
+.select-project a::after{
+    content:'';
+    display: block;
+    margin: auto;
+    width:0;
+    height: 2px;
+    background-color: #fff;
+    transition: width .3s linear;
+}
+ a:hover::after{
+    width:100%
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+.project-info-container{
+    width: 70vw;
+    margin:30px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: linear-gradient(0deg,#1b1b1b,#222);
+}      
+
+.project-info{
+    width: 48%; 
+    position: relative;
+    margin: 10px;
+    border-radius: 4px;
+    min-width: 300px;
+    opacity: 1;
+    transition: opacity 1s linear;
+}
+@keyframes showInfo{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+.projects-opacity-animation{
+    animation: showInfo 3s;
+}
+.project-info h1{
+    margin:10px;
+    position: relative;
+    color: #fff;
+}
+.project-info h2{
+    margin:10px;
+    position: relative;
+    color: #fff;
+}
+.project-info p{
+    margin:10px;
+    position: relative;
+    text-align: justify;
+    color: #fff;
+}
+.project-info ul{
+    margin:10px;
+    left:30px;
+    position: relative;
+    color: #fff;
+}
+
+.project-info ul li{
+    margin:5px;
+    color: #fff;
+}
+
+.project-gallery{
+    width: 48%;
+    min-width: 300px;
+    margin: 10px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    /* background-color: crimson; */
+}
+
+@media (max-width:1427px){
+    .project-gallery{
+        width: 100%;
+    }
+    .project-info{
+        width:100%
+    }
+}

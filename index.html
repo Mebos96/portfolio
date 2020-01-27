@@ -10,16 +10,52 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet" href="./css/skillsStyle.css">
         <link rel="stylesheet" href="./css/footerStyle.css">
+        <link rel="stylesheet" href="./css/projectsStyle.css">
         <script type="text/javascript" src='./js/skills.js'></script>
+        <script type="text/javascript" src='./js/projects.js'></script>
     </head>
     <body>
         <main>
-            <div class="skillsContainer">
+
+            <div class="projects-container">
+                <div id="projects">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-info-container">
+                    <div class="select-project">
+                        <a id="Listownik" style="font-size: 20px;color: #fff; font-weight: 20px;"onclick="changeProject(this)">Listownik</a>
+                        <a id="SCRUM Board" onclick="changeProject(this)">SCRUM Board</a>
+                    </div>
+                    <div class="project-info projects-opacity-animation">
+                        <h1 id="project-name">Listownik</h1>
+                        <h2>About</h2>
+                        <p id="project-about">
+                            The lister project was my engineering work.
+                        </p>
+                        <h2>Languages and technologies</h2>
+                        <ul id="project-technologies">
+                            <li>React Native</li>
+                            <li>JavaScript</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>Rest Api</li>
+                            <li>MySql</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                    <div class="project-gallery projects-opacity-animation">
+                        <p>ashudbh</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skills-container">
                 <div id="skills">
                     <h1>Programing languages and technologies</h1>
                 </div>
-                <div class="cardsContainer">
-                    <div class="skillCard" title="HTML" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                <div class="cards-container">
+                    <div class="skill-card" title="HTML" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <div class="percent">
                                 <svg>
@@ -33,7 +69,7 @@
                             <h2 class="text">HTML</h2>
                         </div>
                     </div>
-                    <div class="skillCard" title="CSS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                    <div class="skill-card" title="CSS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <div class="percent">
                                 <svg>
@@ -47,7 +83,7 @@
                             <h2 class="text">CSS</h2>
                         </div>
                     </div>
-                    <div class="skillCard" title="JAVASCRIPT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                    <div class="skill-card" title="JAVASCRIPT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <div class="percent">
                                 <svg>
@@ -61,7 +97,7 @@
                             <h2 class="text">JavaScript</h2>
                         </div>
                     </div>
-                    <div class="skillCard" title="REACT JS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                    <div class="skill-card" title="REACT JS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <div class="percent">
                                 <svg>
@@ -75,7 +111,7 @@
                             <h2 class="text">React Js</h2>
                         </div>
                     </div>
-                    <div class="skillCard" title="REACT NATIVE" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                    <div class="skill-card" title="REACT NATIVE" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <div class="percent">
                                 <svg>
@@ -89,7 +125,7 @@
                             <h2 class="text">React Native</h2>
                         </div>
                     </div>
-                    <div class="skillCard" title="REDUX" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                    <div class="skill-card" title="REDUX" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <div class="percent">
                                 <svg>
@@ -103,7 +139,7 @@
                             <h2 class="text">Redux</h2>
                         </div>
                     </div>
-                    <div class="skillCard" title="GIT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                    <div class="skill-card" title="GIT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <div class="percent">
                                 <svg>
@@ -118,15 +154,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="skillsInfoContainer">
-                    <h2 id="skillName">
-                        <img class="skillLogo" src=""/>
+                <div class="skills-info-container">
+                    <h2 id="skill-name">
+                        <img class="skill-logo" src=""/>
                     </h2>
-                    <article id="skillsInfo"></article>
+                    <article id="skills-info"></article>
                 </div>
             </div>
         </main>
-        <footer class="footerContainer">
+        <footer class="footer-container">
             <h3>
                 &copy; Copyright 2020, Bartosz Adamczuk
             </h3>
