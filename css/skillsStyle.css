@@ -1,19 +1,42 @@
+
 .skillsContainer{
     position: relative;
-    width: 80vw;
+    width: 96vw;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cardsContainer{
+    width:65vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
+    margin: 20px;
+}
+#skills{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: linear-gradient(0deg,#1b1b1b,#222);
+    text-align: center;
 }
 
+#skills h1{
+    color:#fff;
+    font-size: 40px;
+}
 .skillsContainer .skillCard{
     position: relative;
-    width: 250px;
+    width: 230px;
     background: linear-gradient(0deg,#1b1b1b,#222);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 280px;
     border-radius: 4px;
     text-align: center;
     overflow: hidden;
@@ -89,6 +112,7 @@
     color: #fff;
     transition: 0.5s;
 }
+
 svg{
     position: relative;
     width: 150px;
@@ -110,6 +134,7 @@ svg circle:nth-child(2){
     stroke-dasharray: 440;
     stroke-dashoffset: 440;
 }
+
 @keyframes move1 {
     to{
         stroke-dashoffset: 44;
@@ -117,10 +142,11 @@ svg circle:nth-child(2){
 }
 .skillCard:nth-child(1) svg circle:nth-child(2){
     stroke-dashoffset: 440;    
-    stroke: #00ff43;
+    stroke: #f0932b;
     animation: move1 1s linear forwards;
 
 }
+
 @keyframes move2 {
     to{
         stroke-dashoffset: 88;
@@ -129,14 +155,84 @@ svg circle:nth-child(2){
 .skillCard:nth-child(2) svg circle:nth-child(2){
     stroke-dashoffset: 440;
     stroke: #00a1ff;
-    animation: move2 1s 0.3s linear forwards;
+    animation: move2 1s 0.2s linear forwards;
 }
-@keyframes move2 {
+
+@keyframes move3 {
     to{
-        stroke-dashoffset: 88;
+        stroke-dashoffset: 108;
     }
 }
 .skillCard:nth-child(3) svg circle:nth-child(2){
-    stroke-dashoffset: calc(440 - (440*70) /100 );
-    stroke: #ff04f7;
+    stroke-dashoffset: 440;
+    stroke: #fbc531;
+    animation: move3 1s 0.4s linear forwards;
+}
+
+@keyframes move4 {
+    to{
+        stroke-dashoffset: 108;
+    }
+}
+.skillCard:nth-child(4) svg circle:nth-child(2){
+    stroke-dashoffset: 440;
+    stroke: #00ff43;
+    animation: move4 1s 0.6s linear forwards;
+}
+
+@keyframes move5 {
+    to{
+        stroke-dashoffset: 108;
+    }
+}
+.skillCard:nth-child(5) svg circle:nth-child(2){
+    stroke-dashoffset: 440;
+    stroke: #ff4757;
+    animation: move5 1s 0.8s linear forwards;
+}
+
+@keyframes move6 {
+    to{
+        stroke-dashoffset: 108;
+    }
+}
+.skillCard:nth-child(6) svg circle:nth-child(2){
+    stroke-dashoffset: 440;
+    stroke: #be2edd;
+    animation: move6 1s 1s linear forwards;
+}
+
+@keyframes move7 {
+    to{
+        stroke-dashoffset: 108;
+    }
+}
+.skillCard:nth-child(7) svg circle:nth-child(2){
+    stroke-dashoffset: 440;
+    stroke: #e15f41;
+    animation: move7 1s 1.2s linear forwards;
+}
+
+.skillsInfoContainer{
+    display: flex;
+    width:50vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    opacity:0;
+    transition: opacity .8s linear;
+}
+
+.skillsInfoContainer h2{
+    color: #fff;
+}
+
+.skillsInfoContainer article{
+    color: #777
+}
+
+.skillLogo{
+    width:40px;
+    height: auto;
 }
