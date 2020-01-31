@@ -23,29 +23,35 @@
                 </div>
                 <div class="project-info-container">
                     <div class="select-project">
-                        <a id="Listownik" style="font-size: 20px;color: #fff; font-weight: 20px;"onclick="changeProject(this)">Listownik</a>
-                        <a id="SCRUM Board" onclick="changeProject(this)">SCRUM Board</a>
+                        <a id="Listownik" class="project-name" onclick="changeProject(this)">Listownik</a>
+                        <a id="SCRUM Board" class="project-name" onclick="changeProject(this)">SCRUM Board</a>
                     </div>
                     <div class="project-info projects-opacity-animation">
                         <h1 id="project-name">Listownik</h1>
                         <h2>About</h2>
-                        <p id="project-about">
-                            The lister project was my engineering work.
-                        </p>
+                        <p id="project-about"></p>
                         <h2>Languages and technologies</h2>
-                        <ul id="project-technologies">
-                            <li>React Native</li>
-                            <li>JavaScript</li>
-                            <li>CSS</li>
-                            <li>Python</li>
-                            <li>Django</li>
-                            <li>Rest Api</li>
-                            <li>MySql</li>
-                            <li>Git</li>
-                        </ul>
+                        <ul id="project-technologies"></ul>
                     </div>
                     <div class="project-gallery projects-opacity-animation">
-                        <p>ashudbh</p>
+                        
+                        <!-- Images and buttons on imgage-->
+                        <div class="slideshow-container">
+
+                            <!-- <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="./img/cssLogo.jpg">
+                                <div class="text">Caption Two</div>
+                                </div> -->
+
+                            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+                            <!-- <a class="prev" onclick="plusSlides(1)">❮</a> -->
+                        </div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center" class="projects-slideshow-dots-container">
+                            <!--<span class="dot" onclick="currentSlide(1)"></span> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -66,7 +72,7 @@
                                     <h2>90<span>%</span></h2>
                                 </div>
                             </div>
-                            <h2 class="text">HTML</h2>
+                            <h2 class="skill-text">HTML</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="CSS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
@@ -80,7 +86,7 @@
                                     <h2>80<span>%</span></h2>
                                 </div>
                             </div>
-                            <h2 class="text">CSS</h2>
+                            <h2 class="skill-text">CSS</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="JAVASCRIPT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
@@ -94,7 +100,7 @@
                                     <h2>70<span>%</span></h2>
                                 </div>
                             </div>
-                            <h2 class="text">JavaScript</h2>
+                            <h2 class="skill-text">JavaScript</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="REACT JS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
@@ -108,7 +114,7 @@
                                     <h2>70<span>%</span></h2>
                                 </div>
                             </div>
-                            <h2 class="text">React Js</h2>
+                            <h2 class="skill-text">React Js</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="REACT NATIVE" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
@@ -122,7 +128,7 @@
                                     <h2>70<span>%</span></h2>
                                 </div>
                             </div>
-                            <h2 class="text">React Native</h2>
+                            <h2 class="skill-text">React Native</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="REDUX" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
@@ -136,7 +142,7 @@
                                     <h2>70<span>%</span></h2>
                                 </div>
                             </div>
-                            <h2 class="text">Redux</h2>
+                            <h2 class="skill-text">Redux</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="GIT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
@@ -150,7 +156,7 @@
                                     <h2>70<span>%</span></h2>
                                 </div>
                             </div>
-                            <h2 class="text">Git</h2>
+                            <h2 class="skill-text">Git</h2>
                         </div>
                     </div>
                 </div>
