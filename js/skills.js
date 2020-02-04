@@ -29,10 +29,10 @@ const skills =[
         description :"Git desc"
     }
 ]
-
+window.addEventListener('load', function() {
+    resetInfo()
+})
 function getInfo(arr){
-    let container = document.getElementsByClassName("skills-info-container")
-    container[0].style.opacity = 1
     let name = document.getElementById("skill-name")
     let article = document.getElementById("skills-info")
     skills.map((skill,i)=>{
@@ -43,5 +43,8 @@ function getInfo(arr){
     })
 }
 function resetInfo(){
-    document.getElementsByClassName("skills-info-container")[0].style.opacity = 0
+    let name = document.getElementById("skill-name")
+    let article = document.getElementById("skills-info")
+    name.innerText = "My programming languages"
+    article.innerText = "Abowe is list of languages and technologies i feel good"
 }

@@ -12,8 +12,17 @@ body{
     flex-direction: column;
     background: #101010;
 }
-
+nav{
+    width: 100%;
+    position: fixed;
+    height: 50px;
+    background-color: #171717;
+    color: #fff;
+}
 main{
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +35,7 @@ footer{
     align-items: center;
     position: relative;
     height: 100px;
-    margin-top: 80px;
+    color:#777
 }
 
 ::-webkit-scrollbar{
@@ -39,8 +48,8 @@ footer{
 }
 
 /* start of large tablet styles */
-/* @media screen and (max-width: 991px) { */
-    /* body{
+/* @media screen and (max-width: 991px) {
+    body{
     background-color: yellowgreen;
     }
 } */

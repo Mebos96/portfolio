@@ -36,10 +36,10 @@ const projects=[
     }
 ]
 
-window.onload= function(){
+window.addEventListener('load', function() {
     this.changeProject({id:"Listownik"})
     this.autoChangeSlide()
-}
+})
 
 function changeProject(element){
     let name = document.getElementById("project-name")

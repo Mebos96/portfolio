@@ -8,19 +8,26 @@
         <meta name="author" content="Bartosz Adamczuk">
         <meta http-equiv="X-Ua-Compatible" content="IE=edge">
         <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/navStyle.css">
+        <link rel="stylesheet" href="./css/startStyle.css">
         <link rel="stylesheet" href="./css/skillsStyle.css">
-        <link rel="stylesheet" href="./css/footerStyle.css">
         <link rel="stylesheet" href="./css/projectsStyle.css">
         <script type="text/javascript" src='./js/skills.js'></script>
         <script type="text/javascript" src='./js/projects.js'></script>
     </head>
     <body>
+        <nav>
+            <ul>
+                <li>Projects</li>
+                <li>Skills</li>
+            </ul>
+        </nav>
         <main>
+            <div class="start-container">
+
+            </div>
 
             <div class="projects-container">
-                <div id="projects">
-                    <h1>Projects</h1>
-                </div>
                 <div class="project-info-container">
                     <div class="select-project">
                         <a id="Listownik" class="project-name" onclick="changeProject(this)">Listownik</a>
@@ -57,116 +64,56 @@
             </div>
 
             <div class="skills-container">
-                <div id="skills">
-                    <h1>Programing languages and technologies</h1>
+                <div class="skills-info-container">
+                    <h2 id="skill-name"></h2>
+                    <article id="skills-info"></article>
                 </div>
                 <div class="cards-container">
                     <div class="skill-card" title="HTML" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
-                            <div class="percent">
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>90<span>%</span></h2>
-                                </div>
-                            </div>
+                            <img src="./img/htmlLogo.png" width="100%">
                             <h2 class="skill-text">HTML</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="CSS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
-                            <div class="percent">
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>80<span>%</span></h2>
-                                </div>
-                            </div>
+                            <img src="./img/cssLogo.png" width="45%">
                             <h2 class="skill-text">CSS</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="JAVASCRIPT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
-                            <div class="percent">
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>70<span>%</span></h2>
-                                </div>
-                            </div>
+                            <img src="./img/jsLogo.png" width="50%">
                             <h2 class="skill-text">JavaScript</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="REACT JS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
-                            <div class="percent">
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>70<span>%</span></h2>
-                                </div>
-                            </div>
+                            <img src="./img/reactLogo.png" width="45%">
                             <h2 class="skill-text">React Js</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="REACT NATIVE" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
-                            <div class="percent">
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>70<span>%</span></h2>
-                                </div>
-                            </div>
+                            <img src="./img/reactLogo.png" width="45%">
                             <h2 class="skill-text">React Native</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="REDUX" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
-                            <div class="percent">
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>70<span>%</span></h2>
-                                </div>
-                            </div>
+                            <img src="./img/reduxLogo.png" width="45%">
                             <h2 class="skill-text">Redux</h2>
                         </div>
                     </div>
                     <div class="skill-card" title="GIT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
-                            <div class="percent">
-                                <svg>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                    <circle cx="70" cy="70" r="70"></circle>
-                                </svg>
-                                <div class="number">
-                                    <h2>70<span>%</span></h2>
-                                </div>
-                            </div>
+                            <img src="./img/gitLogo.png" width="45%">
                             <h2 class="skill-text">Git</h2>
                         </div>
                     </div>
                 </div>
-                <div class="skills-info-container">
-                    <h2 id="skill-name">
-                        <img class="skill-logo" src=""/>
-                    </h2>
-                    <article id="skills-info"></article>
-                </div>
             </div>
+
         </main>
         <footer class="footer-container">
             <h3>
