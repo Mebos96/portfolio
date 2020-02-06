@@ -16,8 +16,9 @@ nav{
     width: 100%;
     position: fixed;
     height: 50px;
-    background-color: #171717;
+    background: linear-gradient(#232323,#171717);
     color: #fff;
+    z-index: 5;
 }
 main{
     width: 100%;
