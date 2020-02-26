@@ -93,10 +93,10 @@ function projectsSetImages(project){
 
     project.screens.map((screen,i)=>{
         var divC = document.createElement('div')
-        divC.setAttribute('class',"mySlides fade")
+        divC.setAttribute('class',"my-slides fade")
         if(i === 0) divC.style.display = "block"
         let divScreenNumber = document.createElement('div')
-        divScreenNumber.setAttribute('class','numbertext')
+        divScreenNumber.setAttribute('class','number-text')
         divScreenNumber.innerText= i+1 + "/" + project.screens.length
         divC.appendChild(divScreenNumber)
         let img = document.createElement('img')
@@ -148,7 +148,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("my-slides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}

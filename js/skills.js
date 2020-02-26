@@ -13,8 +13,8 @@ const skills =[
         description :"JS desc"
     },
     {
-        name:"REACT JS",
-        description :"React js desc"
+        name:"REACT",
+        description :"React desc"
     },
     {
         name:"REACT NATIVE",
@@ -45,6 +45,6 @@ function getInfo(arr){
 function resetInfo(){
     let name = document.getElementById("skill-name")
     let article = document.getElementById("skills-info")
-    name.innerText = "My programming languages"
-    article.innerText = "Abowe is list of languages and technologies i feel good"
+    name.innerText = "My programming skills"
+    article.innerText = "Below is a list of languages ​​and technologies in which I feel good"
 }
