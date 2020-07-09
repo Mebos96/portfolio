@@ -92,7 +92,7 @@ function projectsSetImages(project){
     gallery.innerHTML = ''
 
     project.screens.map((screen,i)=>{
-        var divC = document.createElement('div')
+        let divC = document.createElement('div')
         divC.setAttribute('class',"mySlides fade")
         if(i === 0) divC.style.display = "block"
         let divScreenNumber = document.createElement('div')
