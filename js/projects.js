@@ -170,3 +170,13 @@ function autoChangeSlide(){
 
     }, 4000);
 }
+
+function test(a){
+    let b = document.getElementsByClassName("projects-container")[0];
+    b.style.backgroundColor="red"
+}
+
+function test1(a){
+    let b = document.getElementsByClassName("projects-container")[0];
+    b.style.backgroundColor="blue"
+}
