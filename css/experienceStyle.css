@@ -1,83 +1,173 @@
-#experience-container{
+#experiences{
     width: 100%;
-    min-height:100px;
-    /* background-color: red; */
+    background:url('../img/experienceBackground.jpg') fixed top;
+    background-size: cover;
     color: white;
+    position: relative;
+    z-index: 1;
+}
+#experiences::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.9;
+    z-index: -1;
+}
+#experiences h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    position: relative;
-    padding-bottom: 50px;
-}
-#experience-container h1{
-    margin:30px 0;
+    padding: 50px 0;
     font-size: 2em;
 }
-#experience-container .experience{
-    width: 100%;
-    height: 200px;
-    /* background-color: blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-#experience-container .experience .right-experience{
-    margin: 0 0 30px 440px;
-}
-/*************TREE*************/
-#experience-container .tree{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-}
-#experience-container .dot{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    background-color: crimson;
-    border-radius: 50%;
-    display: inline-block;
-}
-#experience-container .line{
-    height:100%;
+#experiences h1::before{
+    content: '';
+    position: absolute;
     width: 2px;
     background-color: crimson;
+    top: 215px;
+    left: 50%;
+    animation: lineLength 2s forwards linear;
 }
-.left{
-    margin-right: 408px;
-}
-.right{
-    margin-left: 412px;
-}
-/**************INFO**************/
-#experience-container .experience-info{
+.experiences-container{
     /* background-color: green; */
-    width: 350px;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    margin:0 30px;
+    align-items: center;
+    min-height: 80vh;
+    padding: 70px 0;
 }
-#experience-container .experience h4{
+.experience{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width:400px;
+    margin-bottom: -20px;
+    opacity: 0;
+    animation: showexperience .5s linear forwards;
+}
+.experience h4{
     color:crimson;
     font-weight: 600;
 }
-#experience-container .experience h3{
+.experience h3{
     font-weight: 500;
     margin-top: 20px;
 }
-#experience-container .experience i{
+.experience i{
     margin-top: 30px;
 }
-#experience-container .experience p{
+.experience p{
     margin-top: 5px;
 }
-#experience-container .experience .left-info{
+div.experience:nth-child(odd){
+    /*left*/
     align-items: flex-end;
     text-align: right;
+    margin-right: 500px;
+}
+div.experience:nth-child(even){
+    /*right*/
+    margin-left: 500px;
+}
+div.experience:nth-child(odd)::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: crimson;
+    right: -58.5px;
+}
+div.experience:nth-child(even)::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: crimson;
+    left:-56px;
+}
+@keyframes showexperience{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes lineLength{
+    from{
+        height: 0;
+    }
+    to{
+        height:625px;
+    }
+}
+
+/*420*/
+/*****************RESPONSIVE*****************************/
+@media screen and (max-width: 1160px) {
+    /*Start of tablets styles*/
+    div.experience:nth-child(odd){
+        margin-right: 450px;
+    }
+    div.experience:nth-child(even){
+        margin-left: 450px;
+    }
+    div.experience:nth-child(odd)::before{
+        right: -34px;
+    }
+    div.experience:nth-child(even)::before{
+
+        left:-31px;
+    }
+}
+
+@media screen and (max-width: 870px) {
+/* start of phone styles */
+    #experiences h1::before{
+        display: none;
+    }
+    .experience::before{
+        display: none;
+    }
+    .experiences-container{
+        padding-top: 10px;
+    }
+    .experience{
+        margin-top: 100px;
+        animation: none;
+        opacity: 1;
+        flex-wrap: wrap;
+        flex-direction: unset;
+    }
+    div.experience:nth-child(odd){
+        align-items: flex-start;
+        text-align: left;
+        margin-right: 0;
+    }
+    div.experience:nth-child(even){
+        margin-left: 0;
+    }
+    .experience h4{
+        width:fit-content;
+        position: absolute;
+        right: 0;
+    }
+    .experience h3{
+        width: fit-content;
+        margin-top: 0;
+    }
+    .experience i{
+        width: 100%;
+    }
+    .experience p{
+        width: 100%;
+    }
 }
