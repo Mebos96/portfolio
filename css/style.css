@@ -10,7 +10,7 @@
 body{
     min-height: 100vh;
     flex-direction: column;
-    background: #101010;
+    background: #111;
 }
 main{
     width: 100%;
