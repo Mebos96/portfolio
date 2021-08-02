@@ -1,5 +1,5 @@
 
-.skills-container{
+#skills{
     width: 100%;
     position: relative;
     display: flex;
@@ -7,21 +7,32 @@
     align-items: center;
     flex-direction: column;
     background: url('../img/skills-background.jpg') fixed center;
-    background-size: 150% auto;
+    background-size: cover;
+    z-index: 1;
 }
-
+#skills::after{
+    content: '';
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.2;
+    z-index: -1;
+}
 .skills-info-container{
     display: flex;
     width:50%;
+    text-align: center;
     flex-direction: column;
     padding: 10px;
+    position: relative;
     border-radius: 3px;
     background-color: rgba(0,0,0,.7);
     color: #fff;
     margin-top: 50px;
-    text-align: center;
 }
-
 .cards-container{
     width:70%;
     display: flex;
@@ -32,17 +43,17 @@
 }
 .skill-card{
     position: relative;
-    width: 130px;
+    width: 150px;
+    height: 180px;
     background: linear-gradient(0deg,#181818,#222);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
     border-radius: 4px;
     text-align: center;
     overflow: hidden;
     transition: 0.5s;
-    margin:20px
+    margin:10px
 }
 .skill-card:hover{
     transform: translateY(-10px);
@@ -61,9 +72,9 @@
 }
 .skill-text{
     color:#777;
-    margin-top: 20px;
+    margin-top: 10px;
     font-weight: 700;
-    font-size: 15px;
+    font-size: 1em;
     letter-spacing: 1px;
     text-transform: uppercase;
     text-shadow: none;
@@ -74,32 +85,25 @@
     text-shadow: 2px 2px 2px #070707;
 }
 .skill-card img{
-    z-index: 2;
     transition: transform 0.5s linear;
 }
 .skill-card:hover img{
     transform: scale(1.1);
 }
 /*****************RESPONSIVE*****************************/
-    @media screen and (max-width: 1160px) {
-        .cards-container{
-            width: 81.7vw;
-        }
+@media screen and (max-width: 1160px) {
+    /*Start of tablets styles*/
+    .skills-info-container{
+        width: 70%;
     }
+}
 
-    @media screen and (max-width: 991px) {
-    /* start of large tablet styles */
-        .skills-info-container{
-            width: 90%;
-        }
+@media screen and (max-width: 870px) {
+/* start of phone styles */
+    .skills-info-container{
+        width: 85%;
     }
-    
-    @media screen and (max-width: 767px) {
-    /* start of medium tablet styles */
-
+    .cards-container{
+        width: 85%;
     }
-    
-    @media screen and (max-width: 479px) {
-    /* start of phone styles */
-
-    }
+}

@@ -12,42 +12,54 @@
         <link rel="stylesheet" href="./css/startStyle.css">
         <link rel="stylesheet" href="./css/skillsStyle.css">
         <link rel="stylesheet" href="./css/projectsStyle.css">
+        <link rel="stylesheet" href="./css/experienceStyle.css">
+        <link rel="stylesheet" href="./css/footerStyle.css">
         <script type="text/javascript" src='./js/skills.js'></script>
         <script type="text/javascript" src='./js/projects.js'></script>
+        <script type="text/javascript" src='./js/navbar.js'></script>
+        <script type="text/javascript" src='./js/experience.js'></script>
     </head>
     <body>
-        <nav>
-            <ul class="navbar-list">
-                <li>About</li>
-                <li>Portfolio</li>
-                <li>Skills</li>
+        <nav class="background">
+            <ul class="nav-links">
+                <li>About me</li>
+                <li>Projects</li>
+                <li>Languages and technologies</li>
+            </ul>
+            <ul class="nav-icons">
+                <li><a href="" target="_blank" alt="Linkedin"><img src="./img/linkedinLogo.png"></a></li>
+                <li><a href="" target="_blank" alt="Facebook"><img src="./img/facebookLogo.png"></a></li>
+                <li><a href="https://github.com/Mebos96/" target="_blank" alt="Github"><img src="./img/githubLogo.png"></a></li>
             </ul>
         </nav>
         <main>
-            <div class="start-container">
+            <section id="start">
+                <div class="image-circle"></div>
+                <h3>inż.Bartosz Adamczuk</h3>
+                <i>Front-end developer</i>
+                <h4>Jestem młodym, ambitnym studentem szukającym zespołu w którym mógłbym rozwijać swoją pasje do programowania.</h4>
+            </section>
 
-            </div>
-
-            <div class="projects-container">
+            <section id="projects" title="Projects" onmouseover="test(this.title)" onmouseout="test1(this.title)">
                 <div class="select-project">
                     <a id="Listownik" class="project-name" onclick="changeProject(this)">Listownik</a>
                     <a id="SCRUM Board" class="project-name" onclick="changeProject(this)">SCRUM Board</a>
                 </div>
                 <div class="project-info-container">
-                    <div class="project-info">
+                    <div class="project-info projects-opacity-animation">
                         <h1 id="project-name">Listownik</h1>
                         <h2>About</h2>
                         <p id="project-about"></p>
                         <h2>Languages and technologies</h2>
                         <ul id="project-technologies"></ul>
                     </div>
-                    <div class="project-gallery">
+                    <div class="project-gallery projects-opacity-animation">
                         
-                        <!-- Images and buttons on image-->
+                        <!-- Images and buttons on imgage-->
                         <div class="slideshow-container">
 
-                            <!-- <div class="my-slides fade">
-                                <div class="number-text">2 / 3</div>
+                            <!-- <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
                                 <img src="./img/cssLogo.jpg">
                                 <div class="text">Caption Two</div>
                                 </div> -->
@@ -62,64 +74,64 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div class="skills-container">
+            <section id="skills">
                 <div class="skills-info-container">
                     <h2 id="skill-name"></h2>
                     <article id="skills-info"></article>
                 </div>
                 <div class="cards-container">
-                    <div class="skill-card" title="HTML" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
+                    <!-- <div class="skill-card" title="HTML" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
                         <div class="box">
                             <img src="./img/htmlLogo.png" width="100%">
                             <h2 class="skill-text">HTML</h2>
                         </div>
-                    </div>
-                    <div class="skill-card" title="CSS" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
-                        <div class="box">
-                            <img src="./img/cssLogo.png" width="45%">
-                            <h2 class="skill-text">CSS</h2>
-                        </div>
-                    </div>
-                    <div class="skill-card" title="JAVASCRIPT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
-                        <div class="box">
-                            <img src="./img/jsLogo.png" width="50%">
-                            <h2 class="skill-text">JavaScript</h2>
-                        </div>
-                    </div>
-                    <div class="skill-card" title="REACT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
-                        <div class="box">
-                            <img src="./img/reactLogo.png" width="45%">
-                            <h2 class="skill-text">React</h2>
-                        </div>
-                    </div>
-                    <div class="skill-card" title="REACT NATIVE" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
-                        <div class="box">
-                            <img src="./img/reactLogo.png" width="45%">
-                            <h2 class="skill-text">React Native</h2>
-                        </div>
-                    </div>
-                    <div class="skill-card" title="REDUX" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
-                        <div class="box">
-                            <img src="./img/reduxLogo.png" width="45%">
-                            <h2 class="skill-text">Redux</h2>
-                        </div>
-                    </div>
-                    <div class="skill-card" title="GIT" onmouseover="getInfo(this.title)" onmouseout="resetInfo()">
-                        <div class="box">
-                            <img src="./img/gitLogo.png" width="45%">
-                            <h2 class="skill-text">Git</h2>
-                        </div>
-                    </div>
+                    </div> -->
                 </div>
-            </div>
+            </section>
 
+            <section id="experiences">
+                <h1>Experience</h1>
+                <div class="experiences-container">
+                    <!-- <div class="experience" style="animation-delay: 0s;">
+                        <h4>2014-2016</h4>
+                        <h3>Praca inżynierska</h3>
+                        <i>Front-end developer</i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, maximus at nisi vel, ornare tristique sem. Proin dui ipsum, iaculis et sollicitudin id, bibendum sed tellus. Sed vitae sem eu tellus fermentum venenatis in eget dolor. Pellentesque lorem mi, sodales eget tincidunt sed, vehicula scelerisque dui.</p>
+                    </div>
+                    <div class="experience" style="animation-delay: 0.7s;">
+                        <h4>2012-2014</h4>
+                        <h3>Visimind Ltd.</h3>
+                        <i>Front-end developer</i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, maximus at nisi vel, ornare tristique sem. Proin dui ipsum, iaculis et sollicitudin id, bibendum sed tellus. Sed vitae sem eu tellus fermentum venenatis in eget dolor. Pellentesque lorem mi, sodales eget tincidunt sed, vehicula scelerisque dui.</p>
+                    </div>
+                    <div class="experience" style="animation-delay: 1.4s;">
+                        <h4>2014-2016</h4>
+                        <h3>Praca inżynierska</h3>
+                        <i>Front-end developer</i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, maximus at nisi vel, ornare tristique sem. Proin dui ipsum, iaculis et sollicitudin id, bibendum sed tellus. Sed vitae sem eu tellus fermentum venenatis in eget dolor. Pellentesque lorem mi, sodales eget tincidunt sed, vehicula scelerisque dui.</p>
+                    </div>
+                    <div class="experience" style="animation-delay: 2s;">
+                        <h4>2014-2016</h4>
+                        <h3>Praca inżynierska</h3>
+                        <i>Front-end developer</i>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec enim tellus, maximus at nisi vel, ornare tristique sem. Proin dui ipsum, iaculis et sollicitudin id, bibendum sed tellus. Sed vitae sem eu tellus fermentum venenatis in eget dolor. Pellentesque lorem mi, sodales eget tincidunt sed, vehicula scelerisque dui.</p>
+                    </div> -->
+                </div>
+            </section>
         </main>
-        <footer class="footer-container">
-            <h3>
+        <footer>
+            <ul>
+                <li><a href="" target="_blank" alt="Linkedin"><img src="./img/linkedinLogo.png"></a></li>
+                <li><a href="" target="_blank" alt="Facebook"><img src="./img/facebookLogo.png"></a></li>
+                <li><a href="https://github.com/Mebos96/" target="_blank" alt="Github"><img src="./img/githubLogo.png"></a></li>
+            </ul>
+            <h3>E-mail</h3>
+            <h4>bartosz.adamczuk@gmail.com</h4>
+            <p>
                 &copy; Copyright 2020, Bartosz Adamczuk
-            </h3>
+            </p>
         </footer>
     </body>
 </html>

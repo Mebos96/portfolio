@@ -1,0 +1,35 @@
+<section id="projects">
+                <div class="select-project">
+                    <a id="Listownik" class="project-name" onclick="changeProject(this)">Listownik</a>
+                    <a id="SCRUM Board" class="project-name" onclick="changeProject(this)">SCRUM Board</a>
+                </div>
+                <div class="project-info-container">
+                    <div class="project-info projects-opacity-animation">
+                        <h1 id="project-name">Listownik</h1>
+                        <h2>About</h2>
+                        <p id="project-about"></p>
+                        <h2>Languages and technologies</h2>
+                        <ul id="project-technologies"></ul>
+                    </div>
+                    <div class="project-gallery projects-opacity-animation">
+                        
+                        <!-- Images and buttons on imgage-->
+                        <div class="slideshow-container">
+
+                            <!-- <div class="mySlides fade">
+                                <div class="numbertext">2 / 3</div>
+                                <img src="./img/cssLogo.jpg">
+                                <div class="text">Caption Two</div>
+                                </div> -->
+
+                            <!-- <a class="prev" onclick="plusSlides(-1)">❮</a> -->
+                            <!-- <a class="prev" onclick="plusSlides(1)">❮</a> -->
+                        </div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center" class="projects-slideshow-dots-container">
+                            <!--<span class="dot" onclick="currentSlide(1)"></span> -->
+                        </div>
+                    </div>
+                </div>
+            </section>

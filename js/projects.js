@@ -92,7 +92,7 @@ function projectsSetImages(project){
     gallery.innerHTML = ''
 
     project.screens.map((screen,i)=>{
-        var divC = document.createElement('div')
+        let divC = document.createElement('div')
         divC.setAttribute('class',"my-slides fade")
         if(i === 0) divC.style.display = "block"
         let divScreenNumber = document.createElement('div')
@@ -169,4 +169,14 @@ function autoChangeSlide(){
         autoChangeSlide();
 
     }, 4000);
+}
+
+function test(a){
+    let b = document.getElementsByClassName("projects-container")[0];
+    b.style.backgroundColor="red"
+}
+
+function test1(a){
+    let b = document.getElementsByClassName("projects-container")[0];
+    b.style.backgroundColor="blue"
 }
