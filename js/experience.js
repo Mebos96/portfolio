@@ -25,36 +25,32 @@ const experiences =[
     }
 ]
 
-window.addEventListener('load',function(){
-    loadExperiences()
-})
+const loadExperiences = () => {
+    let container = document.getElementsByClassName('experiences-container')[0];
+    let time = 0;
 
-function loadExperiences(){
-    let container =document.getElementsByClassName('experiences-container')[0]
-    let time=0
+    experiences.forEach(experience => {
+        let exp = document.createElement('div');
+        exp.className='experience';
+        time+= (2/experiences.length) - 0.1;
+        exp.style.animationDelay= time +"s";
 
-    experiences.forEach((experience)=>{
-        let exp = document.createElement('div')
-        exp.className='experience'
-        time+= (2/experiences.length) - 0.1
-        exp.style.animationDelay= time +"s"
-
-        let years = document.createElement('h4')
-        years.innerText=experience.years
+        let years = document.createElement('h4');
+        years.innerText=experience.years;
         
-        let firm = document.createElement('h3')
-        firm.innerText = experience.firm
+        let firm = document.createElement('h3');
+        firm.innerText = experience.firm;
 
-        let workplace = document.createElement('i')
-        workplace.innerText = experience.workplace
+        let workplace = document.createElement('i');
+        workplace.innerText = experience.workplace;
 
-        let about = document.createElement('p')
-        about.innerText = experience.about
+        let about = document.createElement('p');
+        about.innerText = experience.about;
 
-        exp.appendChild(years)
-        exp.appendChild(firm)
-        exp.appendChild(workplace)
-        exp.appendChild(about)
-        container.appendChild(exp)
+        exp.appendChild(years);
+        exp.appendChild(firm);
+        exp.appendChild(workplace);
+        exp.appendChild(about);
+        container.appendChild(exp);
     })
 }
