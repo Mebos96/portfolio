@@ -3,6 +3,7 @@ nav{
     position: fixed;
     color: #fff;
     z-index: 5;
+    height: 90px;
 }
 nav .nav-links{
     height: 50px;
@@ -37,10 +38,11 @@ nav li:hover{
     transform: scale(1.1);
     font-weight: bold;
 }
-.background{
-    height: 80px;
-}
 .scrolled{
     background: linear-gradient(#232323,#171717);
     height: 50px;
+}
+
+nav .hide{
+    display: none;
 }

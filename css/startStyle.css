@@ -11,6 +11,7 @@
     position: relative;
     z-index: 1;
 }
+
 #start::after{
     content: '';
     position: absolute;
@@ -23,15 +24,13 @@
     z-index: -1;
 }
 .image-circle{
-    width: 45vh;
-    height: 45vh;
-    min-width: 270px;
-    min-height: 270px;
+    width: clamp(270px, 35vh, 500px);
+    height: clamp(270px, 35vh, 500px);
+    background: url("../img/photo.JPG") center no-repeat;
+    background-size: 125%;
     border-radius: 50%;
-    background: url("../img/photo.JPG") center;
     box-shadow: 0 0 30px #000;
     z-index: 1;
-    margin-top: 40px;
 }
 #start h3{
     margin-top: 10px;

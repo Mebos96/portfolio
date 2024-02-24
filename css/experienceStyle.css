@@ -106,7 +106,7 @@ div.experience:nth-child(even)::before{
         height: 0;
     }
     to{
-        height: 625px;
+        height: 715px;
     }
 }
 
